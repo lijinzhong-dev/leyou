@@ -1,0 +1,17 @@
+#设置服务的端口
+server:
+  port: 10086
+
+#设置服务的名称
+spring:
+  application:
+    name: ly-registry
+
+#注册eureka服务
+eureka:
+  client:
+    service-url:
+     defaultZone: http://127.0.0.1:10086/eureka
+#    register-with-eureka: false # 设置不将自己注册到eureka中,即在eureka管控台查看不到该项目服务 默认ture
+#    fetch-registry: false       # 设置不从eureka中拉取服务列表 默认ture
+

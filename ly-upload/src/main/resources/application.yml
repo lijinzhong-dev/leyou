@@ -1,0 +1,32 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: upload-service
+  servlet:
+    multipart:
+      max-file-size: 5MB # 限制单个文件上传的大小
+
+# Eureka客户端
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+
+fdfs:
+  so-timeout: 1501      # 请求超时时间
+  connect-timeout: 601  # 连接超时时间
+  thumb-image:          # 缩略图大写配置
+    width: 60
+    height: 60
+  tracker-list: # tracker地址，如果是集群继续往下添加tracker地址
+    - 192.168.86.138:22122
+ly:
+  upload:
+    baseUrl: http://image.leyou.com/  # 配置上传文件访问时的路径的前半部分
+    allowFileTypes:                   # 配置允许上传的文件类型
+       - image/png
+       - image/jpeg
+
+
+
