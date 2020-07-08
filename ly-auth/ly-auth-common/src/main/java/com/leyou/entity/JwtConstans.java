@@ -1,7 +1,7 @@
 package com.leyou.entity;
 
 /**
- * 静态常量
+ * 静态常量   测试分支提交
  */
 public abstract class JwtConstans {
     public static final String JWT_KEY_ID = "id";
