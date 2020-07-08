@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 /**
- * @Auther: lijinzhong
+ * @Auther: lijinzhong  ljz
  * @Date: 2019/10/22
  * @Description: com.leyou.api
  * @version: 1.0
